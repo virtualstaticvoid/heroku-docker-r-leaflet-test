@@ -1,3 +1,8 @@
+# https://devcenter.heroku.com/articles/build-docker-images-heroku-yml#build-defining-your-build
 build:
   docker:
-    app: Dockerfile
+    web: Dockerfile
+
+# https://devcenter.heroku.com/articles/build-docker-images-heroku-yml#run-defining-the-processes-to-run
+run:
+  web: "/usr/bin/R --no-save --gui-none -f /app/run.R"
