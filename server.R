@@ -2,6 +2,7 @@
 
 library(shiny)
 library(leaflet)
+library(magrittr)
 
 server <- function(input, output, session) {
 
