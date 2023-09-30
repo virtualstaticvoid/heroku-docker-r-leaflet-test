@@ -41,12 +41,6 @@ git push heroku main
 ### Test Application
 
 ```bash
-heroku run R --no-save --file=app.R
-```
-
-Or, if your application has a user-interface or API, open it in your web browser using the following command.
-
-```bash
 heroku open
 ```
 
